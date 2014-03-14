@@ -35,6 +35,9 @@ end
 # Fake text
 gem 'faker'
 
+# colorizes irb / rails console
+gem 'wirble'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
