@@ -10,7 +10,7 @@ categories = Category.create([
 
 # create 50 articles, with random titles, 250 words of content, and
 # randomly assign one of the categories above to each article
-for i in 0..49
+(0..49).each do |i|
 	title = Faker::Lorem.sentence(rand(2..10)).chomp('.')
 	content = Faker::Lorem.paragraph(word_count=250)
 
