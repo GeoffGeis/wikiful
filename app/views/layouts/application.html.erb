@@ -19,6 +19,17 @@
       </div>
     </div>
   </div>
+<div class="container">
+  <div class="row">
+    <div class="span4">
+      <% flash.each do |name, msg| %>
+        <%= content_tag :div, msg, id: "flash_#{name}" %>
+      <% end %>
+    </div>
+  <div class="row">
+    <div class="row">
+      <div class="span9"><%= yield %></div>
+
   <div class="span3 sidebar">
     <div class="my-wiki-site">
       <h4>My Wikiful</h4>
@@ -39,8 +50,7 @@
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium architecto earum neque perspiciatis quia animi debitis quod repellat vitae explicabo. Sapiente aliquam reprehenderit id vitae atque ducimus facere molestias soluta?</p>
     </div>
   </div>
-  <div class="content">
-    <%= yield %>
   </div>
+</div>
 </body>
 </html>
